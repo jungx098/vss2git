@@ -154,6 +154,18 @@ All three backends produce identical output (same commits, tags, and byte-for-by
 | `compare-dirs.cmd <source> <target>` | The same comparison as a standalone batch script (no CLI needed) |
 | `vss_analyze.cmd <database>` | Wrapper around `Analyze.exe` — diagnostic scan, multi-pass repair, verification (needs admin + the VSS tools) |
 
+## Python (Linux / macOS)
+
+A Python port under `python/` runs on Linux and macOS.
+
+```bash
+cd python && pip install -e .
+```
+
+It provides three verbs: `migrate`, `list`, and `verify`. `--encoding` is a Windows code page and defaults to `1252`.
+
+The GUI and the .NET CLI remain the Windows builds.
+
 ## Building
 
 You'll need the [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).

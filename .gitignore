@@ -10,3 +10,11 @@ Vss2GitSetup*.exe
 
 # TestDbBuilder output (VSS test databases are created on-the-fly)
 Vss2Git.IntegrationTests/TestData/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
